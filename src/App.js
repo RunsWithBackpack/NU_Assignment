@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react"
 // import './App.css';
 
-import Header from './Header';
-import Input  from './Input';
-import Count from './Count';
-import { MyApp } from './styled'
-
+import Header from "./Header"
+import Input from "./Input"
+import Count from "./Count"
+import { MyApp } from "./styled"
 
 const App = () => {
   return (
@@ -21,7 +20,7 @@ const App = () => {
       <Input />
       <Count />
     </MyApp>
-  );
+  )
 }
 
-export default App;
+export default App

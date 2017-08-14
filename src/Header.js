@@ -1,10 +1,8 @@
 import React from "react"
-import { TitleHeader } from './styled'
+import { TitleHeader } from "./styled"
 
-
-const Header = () => (
+const Header = () =>
   <div>
     <TitleHeader>Manage my items</TitleHeader>
   </div>
-)
 export default Header
