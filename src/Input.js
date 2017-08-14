@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { connect } from 'react-redux';
 import { addTask } from './Store'
+import { TaskForm, TaskInput, Hr, AddItemButton } from './styled'
+
 
 const mapStateToProps = (state) => {
   return {}
@@ -13,22 +15,8 @@ const mapDispatchToProps = {
 
 
 class Input extends Component {
-    constructor(){
-      super()
-      this.state = {
-        task: ""
-      }
-      this.handleChange = this.handleChange.bind(this)
-      this.handleSubmit = this.handleSubmit.bind(this)
-    }
 
-    // method = () => {
-    //     // It is a bound method, means `this` is preserved
-    // }
-
-    // methodWithParams = (params) => {
-    //     // Bound method with passed parameters
-    // }
+    state = { task: "" }
 
     handleChange = (evt) => {
       let newTask = evt.target.value
@@ -64,10 +52,10 @@ class Input extends Component {
     render() {
       return (
         <div>
-          <form onSubmit={this.handleSubmit}>
-          <input type="text" onChange={this.handleChange} value={this.state.task}/>
-          <button className="addItemButton" type="submit">Add item</button>
-        </form>
+          <TaskForm onSubmit={this.handleSubmit}>
+            <TaskInput onChange={this.handleChange} value={this.state.task}/>
+            <AddItemButton type="submit">Add item</AddItemButton>
+          </TaskForm>
         </div>
       )
     }

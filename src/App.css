@@ -1,3 +1,5 @@
+/*THIS IS NO LONGER BEING USED*/
+/*
 .App {
   text-align: center;
   text-shadow: 0.5px 0.5px 0.75px #555555;
@@ -46,6 +48,7 @@ button {
   position: relative;
 }
 
+
 .titleHeader {
   font-size: 2.5rem;
   font-family: 'Roboto Slab', serif;
@@ -55,6 +58,8 @@ button {
 .addItemButton {
   background-color:
 }
+
+
 
 .tasksWrapper {
   width: 80%;
@@ -79,7 +84,6 @@ button {
   background-color: #AABBCC;
   margin-top: 1%;
   box-shadow: 3px 3px 5px #555555;
-
 }
 
 .taskListItemOdd {
@@ -96,14 +100,12 @@ button {
 
   position: relative;
   bottom: 2px;
-  /*border: 2px solid red;*/
 }
 
 .indivTask {
   width: 32%;
   display: inline-block;
   align-content: center;
-  /*border: 2px solid blue;*/
   text-shadow: none;
 
 }
@@ -126,9 +128,6 @@ button {
   text-align: left;
 }
 
-/*.assigned {
-  width: 40%;
-}*/
 
 .delete {
   width: 10%;
@@ -138,4 +137,4 @@ button {
   display: inline;
   background-color: #CC5555;
   height: auto;
-}
+}*/
